@@ -1,0 +1,145 @@
+form
+{
+	display: inline-block;
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #28245f;
+	margin: 0 auto;
+}
+
+.field
+{
+	width: 100%;
+	display: inline-block;
+	border: none;
+}
+
+/*Attention notice styles*/
+
+#attention
+{
+	margin-top:2em;
+	text-align: center;
+	display: inline-block;
+
+}
+
+#attention p
+{
+	color:$alert;
+}
+
+/* LOGIN / REGISTER FORM */
+
+/* Header Login Status */
+
+#login-status
+{
+	display: inline-block;
+	float: right;
+
+}
+#login-status ul li
+{
+	display: inline-block;
+	float: left;
+	margin: .5em;
+	padding: .2em;
+	
+}
+
+#login-status ul li a
+{
+	text-decoration: none;
+}
+
+/* Forms */
+
+.form-container
+{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+form#login-form, form#register-form
+{
+	border-radius: 5px;
+	background-color: $background-color;
+	border: 1px solid $font-color-dark;
+	color: $font-color-light;
+	width:40%;
+	margin: 3em auto;
+	padding: 2em;	
+	text-align: center;
+
+}
+form#login-form fieldset, form#register-form fieldset
+{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
+
+legend
+{
+	color: $font-color-light;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+button#submitdetails, input
+{
+	 color:#28245f;
+}
+
+form#login-form button
+{
+	display: inline-block;
+	margin: 0 auto 2em auto;
+	width: 15em;
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+
+}
+
+form#register-form button 
+{
+	display: inline-block;
+	margin: 0 auto 2em auto;
+	width: 15em;
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+
+}
+
+form#login-form input, form#register-form input
+{
+	width:100%;
+}
+
+form#login-form label 
+{
+	width: 1em;
+}
+
+.errormsg
+{
+	margin:1em auto;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	font-weight:bold;
+}
+
+span.error
+{
+	font-size: 1em;
+	color: $alert;
+	float: none;
+
+
+}

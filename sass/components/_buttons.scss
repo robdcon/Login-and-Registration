@@ -1,0 +1,34 @@
+button
+{
+	display: inline-block; 
+	border-radius: .625em;
+	cursor:pointer;
+	font: sans-serif;
+}
+
+.btn-main
+{
+	padding:0;
+	color:$font-color-light;
+	background-color: $background-color;
+
+	&:hover
+	{
+		color:$font-color-dark;
+		background-color:$font-color-light;
+	}
+
+	&:active
+	{
+		color:$font-color-dark;
+		background-color:$font-color-light;
+	}
+}
+.btn
+{
+	text
+	{
+		decoration:none;
+	}
+}
+

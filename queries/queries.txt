@@ -1,0 +1,43 @@
+// Create Database for Menu Creator
+
+CREATE DATABASE menucreator
+
+
+// Query to create user table for menucreator software
+
+CREATE TABLE
+users(
+    user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    user_username varchar(25) NOT NULL,
+    user_fname varchar(55) NOT NULL,
+    user_lname varchar(55) NOT NULL,
+    user_email varchar(55) NOT NULL,
+    user_password varchar(55) NOT NULL,
+    user_status INT NOT NULL DEFAULT 1
+    )
+
+// Query to create menu table for menucreator software
+
+CREATE TABLE
+menus(
+    menu_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    menu_menuname varchar(25) NOT NULL,
+    menu_date_created date NOT NULL,
+    menu_date_display date NOT NULL,
+    menu_menu_status varchar(55) default "New",
+    menu_menu_string varchar(55) NOT NULL,
+    menu_user_id INT NOT NULL,
+    CONSTRAINT FOREIGN KEY menus(menu_user_id)
+    REFERENCES users(user_id)
+     
+    )
+
+// Query to create recipe table
+
+CREATE TABLE 
+recipes(
+    recipe_id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    recipe_name VARCHAR(255) DEFAULT NULL,
+    recipe_user_id INT(11) NOT NULL,
+    CONSTRAINT FOREIGN KEY recipes(recipe_user_id) REFERENCES users(user_id)
+    )

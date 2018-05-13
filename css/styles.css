@@ -1,0 +1,448 @@
+/*reset styles*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+nav
+{
+	color:#fff;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+button
+{
+	border: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+label, button, input[type="submit"]{cursor:pointer;} 
+input[type="text"]{cursor:pointer;}
+
+
+
+/*MENU TEMPLATE STYLES*/
+
+.container /*Reset Bootstrap styles*/ 
+{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+div:focus
+{
+	border: 1px solid #ff0000;
+}
+body
+{
+	font-family: "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* GENERAL USE CLASSES*/
+
+.hide
+{
+	display:none;
+}
+.center
+{
+	margin: 0 auto;
+}
+
+/* CONTENT */
+
+#content
+{
+	width: 100%;
+}
+
+/*UI SIDEBAR*/
+
+#menucontrols
+{
+	position:relative;
+	height: 100%;	
+	padding: 1em;
+	max-width: 20%;	
+	background-color: #28245f;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+/* TOOLTIP HINTS FOR MENU UI (Sidebar) */
+
+#tooltip-container
+{
+	position:relative;
+}
+
+#tool-tips
+{
+	position:absolute;
+	right:-200px;
+	color:#28245f;
+	width:200px;
+	height:100px;
+	background-color:#fff;
+}
+
+/*PRIMARY NAVIGATION*/
+
+.menu-btn
+{
+	padding: .6em;
+	background-color: #28245f;
+	border: 1px solid #53d8fb;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	width: 90%;
+	max-width: 90%;	
+	margin: .2em .5em;
+}
+
+.menu-btn:focus, .menu-btn:hover
+{
+	color:#28245f;
+	background-color: #53d8fb;
+	box-shadow: 0px 0px 10px #ccffff;
+}
+.navbar
+{
+	background-color: #28245f;
+	border-bottom: 1px solid #53d8fb;
+	margin: 0;
+	color:#fff;
+
+}
+
+.navbar nav ul li a
+{
+	color:#fff;
+}
+
+/*login/logout links*/
+.login, .logout 
+{
+	padding: .25em;
+	font-size: .75em;
+	color: #53d8fb;
+}
+
+/*MENU TEMPLATE UI SECTION*/
+#menu-template-container
+{
+	width: 50%;
+	display: inline-block;
+}
+
+#menu-container
+{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	text-align: center;
+}
+
+#menu-display
+{
+	display: inline-block;
+	max-width: 100%;
+}
+.menu-day-container
+{
+	font-size: 1.5em;
+	text-align: center;
+}
+form
+{
+	display: inline-block;
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #28245f;
+	margin: 0 auto;
+}
+.field
+{
+	width: 100%;
+	display: inline-block;
+	border: none;
+}
+div.allergens
+{
+	font-style: italic;
+
+}
+input, select, fieldset
+{
+	width: 90%;
+	display: inline-block;
+	text-align: left;
+	border: none;
+	float: left;
+}
+#daycontainer input.menuday
+{
+	width: 100%;
+	height: 2em;
+	font-weight: bolder;
+	font-size: 2em;
+	text-align: center;
+}
+span 
+{
+	font-size:1em;
+	display: inline-block;
+	float: right;
+}
+input.price
+{
+
+	width:10%;
+	float: right;
+	display: inline-block;
+}
+.menusection.main , .menusection.soup
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: Arial;
+}
+.menusection.side
+{
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: Arial;
+}
+
+
+/*RESULTS LIST UI SECTION*/
+
+#list-container
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	background-color: #28245f;
+	display: inline-block;
+	float: right;
+}
+
+#list-container:focus
+{
+	box-shadow:0px 0px 10px #fff;
+}
+ul#results-list
+{
+	width: 90%;
+	margin-top: 0 auto;
+}
+
+#list-container ul li
+{
+
+	width: 100%;
+	display: inline-block;
+	margin: .2em 0 0 0;
+}
+#list-container li img 
+{
+	width: 25%;
+	height: auto;
+	float: left;
+}
+.dishlistitem
+{
+	height: 100%;
+	display: inline-block;
+	max-width: 70%;
+	color: #fff;
+	padding: .2em;
+}
+/*Attention notice styles*/
+#attention
+{
+	margin-top:2em;
+	text-align: center;
+	display: inline-block;
+
+}
+#attention p
+{
+	color:#ff0000;
+}
+
+/* LOGIN / REGISTER FORM */
+
+
+
+#login-status
+{
+	display: inline-block;
+	float: right;
+
+}
+#login-status ul li
+{
+	display: inline-block;
+	float: left;
+	margin: .5em;
+	padding: .2em;
+	
+}
+#login-status ul li a
+{
+	text-decoration: none;
+}
+
+.form-container
+{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+form#login-form, form#register-form
+{
+	border-radius: 5px;
+	background-color: #28245f;
+	border: 1px solid #53d8fb;
+	color: #53d8fb;
+	width:40%;
+	margin: 3em auto;
+	padding: 2em;	
+	text-align: center;
+
+}
+form#login-form fieldset, form#register-form fieldset
+{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
+
+legend
+{
+	color: #53d8fb;
+	text-align: center;
+	margin-bottom: 2em;
+}
+button#submitdetails, input
+{
+	 color:#28245f;
+}
+
+form#login-form button
+{
+	display: inline-block;
+	margin: 0 auto 2em auto;
+	width: 15em;
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+
+}
+form#register-form button 
+{
+	display: inline-block;
+	margin: 0 auto 2em auto;
+	width: 15em;
+	color: #ffffff;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+
+}
+form#login-form input, form#register-form input
+{
+	width:100%;
+}
+form#login-form label 
+{
+	width: 1em;
+}
+.errormsg
+{
+	margin-top:1em;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+}
+span.error
+{
+	font-size: .8em;
+	color: rgb(255,0,0);
+	float: none;
+
+
+}
+/*CODE TO HIDE LABEL CONTROLS WHILE KEEPING ACCESSIBILITY*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*CENTRE PLACEHOLDER TEXT (http://stackoverflow.com/questions/7381446/center-html-input-text-field-placeholder)*/
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
