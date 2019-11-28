@@ -4,9 +4,9 @@
 // ini_set('display_errors',true);
 // error_reporting(E_ALL);
 
-$username = 'robdcon9';
-$database = 'robdcon9_demo';
-$password = 'Buck2?sgfast';
+$username = '';
+$database = '';
+$password = '';
 $host = 'localhost';
 // Create DSN variable with the required information
 
